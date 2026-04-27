@@ -3,83 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pertemuan 1</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Pengembangan Web</title>
 </head>
 <body>
     <header>
-        <p>This is header</p>
-        <div>
-            <a href="#about me">About</a>
+        <h1>Noval <span class="accent">.</span></h1>
+        <nav>
+            <a href="#about-me">About</a>
             <a href="#project">Project</a>
-            <a href="#Contact">Contact</a>
-            <a href="#Skill">Skill</a>
-        </div>
+            <a href="#contact">Contact</a>
+            <a href="#skills">Skills</a>
+        </nav>
     </header>
 
     <main>
-        <section id="About-me">
-            <h2>About Me</h2>
-            <p>Hallo <br>Nama Saya Naufal Maulana</p>
-            <p>I am sofware enginering</p>
-            <p>I am from Informatic </p>
+        <section id="about-me">
+            <div class="hero-kiri">
+                <h2>About Me</h2>
+                <p>Hello <br/>My name is Naufal Maulana</p>
+                <p>I'm software engineer</p>
+                <p>I'm from Informatic UISI</p>
 
-            <img src="LogoUISI.png" height="100px" width="100px" alt="">
-            
+                <br/>
+
+                <div class="hero-tombol">
+                    <button class="btn-primary">Got a protect</button>
+                    <button class="btn-outline">My resume</button>
+                </div>
+            </div>
+
+            <div class="hero-kanan">
+                <div class="hero-img-wrapper">
+                    <img src="img/FotoProfile.jpg" alt=""/>
+                </div>
+            </div>
         </section>
 
         <section id="project">
             <h2>My Project</h2>
+            <br/>
 
-            <article>
-                <h3>Company Profile</h3>
-                <img src="LogoUISI.png" width="100px" width="100px" alt="">
-                <p>This is website company profile</p>
-                <button>Sec Project</button>
-            </article>
+            <div class="project-grid">
+                <article>
+                    <div class="project-img">
+                        <img src="img/gambar3.png" alt=""/>
+                    </div>
 
+                    <div class="project-body">
+                        <h3>Company Profile</h3>
+                        <p>This is company profile website</p>
+                    </div>
 
-            <article>
-                <h3>Inventory</h3>
-                <img src="LogoUISI.png" width="100px" width="100px" alt="">
-                <p>This is website company profile</p>
-                <button>Sec Project</button>
-            </article>
+                    <button>Lihat Project</button>
+                </article>
 
-            <article id="Skill">
-                <h2>My Skills</h2>
-                <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                </ul>
-            </article>
-            
+                <article>
+                    <div class="project-img">
+                        <img src="img/gambar1.png" alt=""/>
+                    </div>
+
+                    <div class="project-body">
+                        <h3>Company Profiles</h3>
+                        <p>This is company profile website</p>
+                    </div>
+
+                    <button>Lihat Project</button>
+                </article>
+
+                <article>
+                    <div class="project-img">
+                        <img src="img/gambar2.png" alt=""/>
+                    </div>
+
+                    <div class="project-body">
+                        <h3>Company profiles</h3>
+                        <p>This is company profile website</p>
+                    </div>
+
+                    <button>Lihat Project</button>
+                </article>
+
+            </div>
         </section>
+        <br/>
+
+        <section id="Skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java Script</li>
+            </ul>
+        </section>
+        <br/>
+
+        <section id="education">
+            <div class="small-container">
+                <h2>Riwayat Pendidikan</h2>
+                <div class="card">
+                    <h3>Universitas Internasional Semen Indonesia</h3>
+                    <p class="sub-text">Informatika | 2024 - Sekarang</p>
+                </div>
+                <div class="card">
+                    <h3>SMKs Mambaul Jadid</h3>
+                    <p class="sub-text">Rekayasa Perangkat Lunak | 2021 - 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="small-container">
+                <h2>Riwayat Pekerjaan</h2>
+                <div class="card">
+                    <h3>Frontend Developer</h3>
+                    <p class="sub-text">Membangun landing page menggunakan HTML, CSS dan JS</p>
+                </div>
+                <div class="card">
+                    <h3>Petani Salak</h3>
+                    <p class="sub-text">Kalau Libur Semester</p>
+                </div>
+            </div>
+        </section>
+        <br/>
+
         <section id="Contact">
-            <h2>My Contact</h2>
+            <h2>Contact</h2>
             <article>
-                <p>Phone: </p>
-                <p>Email: </p>
-                <p>Instagram: </p>
+                <p>Phone: <a href="">082132201240</a></p>
+                <p>Email: <a href="">naufal.maulana24@studet.uisi.ac.id</a></p>
+                <p>Instagram: <a href="">npaaaaal_</a></p>
             </article>
 
-            <h3>Send me message</h3>
-            <form action="Send me message">
+            <h2>Send Message</h2>
+            <form action="">
                 <div>
-                    <label for="name">Home:</label>
-                    <input type="text" id="name" name="name" placeholder="input your name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Input Your name">
                 </div>
-                <br>
+                <br/>
 
                 <div>
-                    <label for="name">Message:</label>
-                    <input type="text" id="message" name="message" placeholder="input your message">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message" placeholder="Input your message">
                 </div>
-                <br>
+                <br/>
 
                 <button>Submit</button>
             </form>
-
         </section>
     </main>
+    <footer>
+        <p>copyright by naufal maulana</p>
+    </footer>
 </body>
 </html>
